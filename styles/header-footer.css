@@ -429,11 +429,22 @@ b {
 }
 
 .absolute {
-    position: absolute;
+    position: absolute
 }
 
-.absolute {
-    position: absolute
+/* Styles for small screens */
+@media screen and (max-width: 450px) {
+    .absolute-navbar {
+        /* Styles for screens with width less than or equal to 450px */
+        position: fixed;
+    }
+}
+
+/* Styles for screens wider than 450px */
+@media screen and (min-width: 451px) {
+    .absolute-navbar {
+        position: absolute;
+    }
 }
 
 .relative {
